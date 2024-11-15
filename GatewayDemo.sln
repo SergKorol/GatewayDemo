@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayDemo.ForecastApi", "GatewayDemo.ForecastApi\GatewayDemo.ForecastApi.csproj", "{E80C73F6-379A-4698-99D5-2348CA352B60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{810DFAFD-36BB-4946-A593-572CCD12F5A4}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayDemo.GatewayApi", "GatewayDemo.GatewayApi\GatewayDemo.GatewayApi.csproj", "{FD44AA83-97A6-4F7D-8E9F-1654331FCB5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E80C73F6-379A-4698-99D5-2348CA352B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80C73F6-379A-4698-99D5-2348CA352B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80C73F6-379A-4698-99D5-2348CA352B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80C73F6-379A-4698-99D5-2348CA352B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD44AA83-97A6-4F7D-8E9F-1654331FCB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD44AA83-97A6-4F7D-8E9F-1654331FCB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD44AA83-97A6-4F7D-8E9F-1654331FCB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD44AA83-97A6-4F7D-8E9F-1654331FCB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

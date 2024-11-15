@@ -1,0 +1,33 @@
+﻿version: '3.8'
+
+services:
+  gatewaydemo.forecastapi:
+    image: gatewaydemo.forecastapi
+    build:
+      context: .
+      dockerfile: GatewayDemo.ForecastApi/Dockerfile
+    ports:
+      - "5003:80"  # Map port 5003 on host to port 80 in the container
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - gateway-network
+
+  gatewaydemo.gatewayapi:
+    image: gatewaydemo.gatewayapi
+    build:
+      context: .
+      dockerfile: GatewayDemo.GatewayApi/Dockerfile
+    ports:
+      - "5001:80"  # Map port 5000 on host to port 80 in the container
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - FORECAST_API_URL=http://gatewaydemo.forecastapi  # Internal service URL
+    depends_on:
+      - gatewaydemo.forecastapi
+    networks:
+      - gateway-network
+
+networks:
+  gateway-network:
+    driver: bridge
